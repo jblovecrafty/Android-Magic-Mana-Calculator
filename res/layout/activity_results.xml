@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/magicbackground2" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculated_mana_screen_header_text"
+        android:padding="3dip"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TableRow android:layout_marginBottom="6dp" 
+        android:layout_marginTop="6dp" >
+    <TextView
+        android:id="@+id/forest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/number_green_mana_cards" />
+
+    <TextView
+        android:id="@+id/forestAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/mountain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/number_red_mana_cards" />
+
+    <TextView
+        android:id="@+id/mountainAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/swamps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/number_black_mana_cards" />
+
+    <TextView
+        android:id="@+id/swampAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+        <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/island"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/number_blue_mana_cards" />
+
+    <TextView
+        android:id="@+id/islandAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/plains"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/number_white_mana_cards" />
+
+    <TextView
+        android:id="@+id/plainsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/landCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/total_initial_land_amount" />
+
+    <TextView
+        android:id="@+id/landCardsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:textColor="#ff0000"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/estimatedLandCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/total_estimated_land_amount" />
+
+    <TextView
+        android:id="@+id/estimatedLandCardsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:textColor="#ff0000"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/differenceLandCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:textColor="#ff0000"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/land_card_difference" />
+
+    <TextView
+        android:id="@+id/differenceLandCardsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:textColor="#ff0000"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+    
+    <TableRow android:layout_marginBottom="6dp" >
+    <TextView
+        android:id="@+id/nonLandCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/total_cards_amount" />
+
+    <TextView
+        android:id="@+id/nonLandCardsAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        style="@android:style/TextAppearance.Medium"
+        android:text="@string/init_value" />
+    </TableRow>
+
+    <Button
+        android:id="@+id/buttonRecalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recalculate_mana_button_text" />
+
+</TableLayout>

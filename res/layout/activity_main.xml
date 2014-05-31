@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/magicbackground1" >
+
+   <TableLayout
+        android:id="@+id/TableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.13"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:shrinkColumns="0" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/text_viewone"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_marginBottom="3dp" >
+
+            <TextView
+                android:id="@+id/forestText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:text="@string/green_mana" />
+
+            <TextView
+                android:id="@+id/seekBarForestAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:text="@string/init_value" />
+            
+        </TableRow>
+        <SeekBar
+                android:id="@+id/seekBarForest"
+                android:layout_width="match_parent"
+                android:thumb="@drawable/forest_symbol"
+                android:layout_height="wrap_content" />
+
+        <TableRow android:layout_marginBottom="3dp" >
+
+             <TextView
+                android:id="@+id/mountainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:text="@string/red_mana" />
+             
+            <TextView
+                android:id="@+id/seekBarMountainAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_value" />
+
+         
+        </TableRow>
+
+        <SeekBar
+            android:id="@+id/seekBarMountain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:thumb="@drawable/mountain_symbol" />
+
+        <TableRow android:layout_marginBottom="3dp" >
+
+            <TextView
+                android:id="@+id/swampText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:text="@string/black_mana" />
+
+            <TextView
+                android:id="@+id/seekBarSwampAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_value" />
+
+          
+        </TableRow>
+        
+        	<SeekBar
+                android:id="@+id/seekBarSwamp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:thumb="@drawable/swamp_symbol"/>
+
+        <TableRow android:layout_marginBottom="3dp" >
+
+            <TextView
+                android:id="@+id/islandText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:text="@string/blue_mana" />
+
+            <TextView
+                android:id="@+id/seekBarIslandAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_value" />
+
+           
+        </TableRow>
+        <SeekBar
+                android:id="@+id/seekBarIsland"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:thumb="@drawable/island_symbol"/>
+
+        <TableRow android:layout_marginBottom="3dp" >
+
+            <TextView
+                android:id="@+id/plainsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="0dip"
+                android:text="@string/white_mana" />
+
+            <TextView
+                android:id="@+id/seekBarPlainsAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/init_value" />
+            
+        </TableRow>
+
+          <SeekBar
+                android:id="@+id/seekBarPlains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:thumb="@drawable/plains_symbol"/>
+
+
+
+       <TableRow>
+		<TextView
+            android:id="@+id/numberOfLandsInDeck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_land_amount" />
+				
+		
+      <EditText
+           android:id="@+id/numberOfLandsInDeckAmount"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:digits="0123456789"
+			android:inputType="numberDecimal"
+			 android:maxLength="3"
+           android:ems="5" >
+
+       </EditText>
+       </TableRow>
+           <TableRow>
+
+            <TextView
+            android:id="@+id/numberOfCardsInDeck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total_cards_amount" />
+            
+             <EditText
+           android:id="@+id/numberOfCardsInDeckAmount"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:digits="0123456789"
+			android:inputType="numberDecimal"
+			 android:maxLength="3"
+           android:ems="5" >
+
+       </EditText>
+           
+        </TableRow>
+
+           <TextView
+               android:id="@+id/textView2"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:padding="2dip"
+               android:text="@string/total_cards_warning"
+               android:textAppearance="?android:attr/textAppearanceSmall" />
+
+           <Button
+               android:id="@+id/button1"
+               style="?android:attr/buttonStyleSmall"
+               android:layout_width="288dp"
+               android:layout_height="wrap_content"
+               android:text="@string/calculate_mana_button_text" />
+
+    </TableLayout>
+
+</LinearLayout>

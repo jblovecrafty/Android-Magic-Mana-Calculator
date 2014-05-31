@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UtilityProject</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_viewone">Number for Each Symbol of Your Deck</string>
+    <string name="green_mana">Green Mana</string>
+    <string name="red_mana">Red Mana</string>
+    <string name="black_mana">Black Mana</string>
+    <string name="blue_mana">Blue Mana</string>
+    <string name="white_mana">White Mana</string>
+    <string name="total_land_amount">Total Lands Amount</string>
+    <string name="total_cards_amount">Total Cards Amount</string>
+    <string name="total_cards_warning">Total Number of Cards in Deck Must be Larger than Amount of Lands</string>
+    <string name="calculate_mana_button_text">Calculate Mana</string>
+    <string name="calculated_mana_screen_header_text">Estimate of Mana Breakdown</string>
+    <string name="number_green_mana_cards">Number of Forest Cards</string>
+    <string name="number_red_mana_cards">Number of Mountain Cards</string>
+    <string name="number_black_mana_cards">Number of Swamp Cards</string>
+    <string name="number_blue_mana_cards">Number of Island Cards</string>
+    <string name="number_white_mana_cards">Number of Plains Cards</string>
+    <string name="total_initial_land_amount">Number of Land Cards Entered</string>
+    <string name="total_estimated_land_amount">Number of Land Cards Estimated</string>
+    <string name="land_card_difference">Difference Between Land Card Amounts</string>
+    <string name="recalculate_mana_button_text">Start Over</string>
+    <string name="init_value">0</string>
+
+</resources>
